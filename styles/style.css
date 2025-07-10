@@ -234,6 +234,7 @@ main .user-feedback .feedback-cards .card .user-details .review-data {
 main .user-feedback .feedback-cards .card .user-details .user-img {
   border-radius: 50%;
 }
+/* ===== End: Users Feedback Section ===== */
 
 /* ===== Start: Focus Section ===== */
 main .focus {
@@ -258,12 +259,56 @@ main .focus .focus-subtitle {
   font-weight: 400;
   color: var(--secondary-text-color);
 }
-
+main .focus .focus-btn {
+  font-weight: 600;
+}
 main .focus .webflow-big-img {
   max-width: 840px;
   border-radius: 3rem;
-
 }
 /* ===== End: Focus Section ===== */
-/* ===== End: Users Feedback Section ===== */
+
+/* ===== Start: Get In Touch Section ===== */
+main .getIn-touch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .getIn-touch .touch-title {
+  font-size: 6.25rem;
+  font-weight: bold;
+  max-width: 528px;
+}
+main .getIn-touch form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+main .getIn-touch form .form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+main .getIn-touch form .form-item label {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+main .getIn-touch form .form-item input[type="text"],
+main .getIn-touch form .form-item input[type="email"], 
+main .getIn-touch form .form-item textarea {
+  padding: 1.25rem 2rem;
+  font-size: 1.25rem;
+  border-radius: 0.625rem;
+  border: none;
+  margin-top: 0.8rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 450px;
+}
+
+main .getIn-touch form input[type="submit"]{
+  font-weight: 600;
+}
+/* ===== End: Get In Touch Section ===== */
 /* ===== End: Main Section ===== */
