@@ -13,7 +13,8 @@
 /* ===== Start: Theme variable ===== */
 :root {
   --primary-color: #4e47ff;
-  --secondary-color: rgba(37, 36, 50, 0.5);
+  --secondary-color: #252432;
+  --secondary-text-color: rgba(37, 36, 50, 0.5);
 }
 /* ===== End: Theme variable ===== */
 
@@ -127,10 +128,46 @@ main {
 }
 .action-description {
   font-size: 1.5rem;
-  color: var(--secondary-color);
+  --secondary-color: #252432;
+  color: var(--secondary-text-color);
 }
 .action-img {
   border-radius: 48px;
 }
 /* ===== End: Action Section ===== */
+
+/* ===== Start: Productive User Data ===== */
+main .productive-users {
+  /* max-width: 1140px; */
+  background-color: rgba(78, 71, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 50px 80px;
+  margin-bottom: 8.5rem;
+}
+
+main .productive-users .productive-title {
+  font-size: 38px;
+  font-weight: bold;
+  --secondary-color: #252432;
+  color: var(--secondary-color);
+  margin-bottom: 40px;
+}
+main .productive-users .users-data {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .productive-users .users-data .data-title {
+  color: var(--primary-color);
+  font-size: 80px;
+  font-weight: bold;
+}
+
+main .productive-users .users-data .data-subtitle {
+  font-size: 18px;
+  color: var(--secondary-text-color);
+}
+/* ===== End: Productive User Data ===== */
+
 /* ===== End: Main Section ===== */
