@@ -273,6 +273,7 @@ main .getIn-touch {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 4.375rem 0;
 }
 
 main .getIn-touch .touch-title {
@@ -296,7 +297,7 @@ main .getIn-touch form .form-item label {
   font-weight: 600;
 }
 main .getIn-touch form .form-item input[type="text"],
-main .getIn-touch form .form-item input[type="email"], 
+main .getIn-touch form .form-item input[type="email"],
 main .getIn-touch form .form-item textarea {
   padding: 1.25rem 2rem;
   font-size: 1.25rem;
@@ -307,8 +308,71 @@ main .getIn-touch form .form-item textarea {
   width: 450px;
 }
 
-main .getIn-touch form input[type="submit"]{
+main .getIn-touch form input[type="submit"] {
   font-weight: 600;
 }
 /* ===== End: Get In Touch Section ===== */
 /* ===== End: Main Section ===== */
+
+/* ===== Start: Footer Section ===== */
+footer {
+  padding: 6.25rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .footer-content {
+  max-width: 531px;
+}
+footer .logo {
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: var(--primary-color);
+}
+
+footer .footer-description {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+footer nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+footer nav ul li a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--secondary-text-color);
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+footer nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: var(--primary-color);
+  bottom: -0.3rem;
+  left: 0;
+  transition: all 0.5s ease;
+}
+
+footer nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+footer nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* ===== End: Footer Section ===== */
