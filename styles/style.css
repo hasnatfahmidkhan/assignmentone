@@ -13,13 +13,16 @@
 /* ===== Start: Theme variable ===== */
 :root {
   --primary-color: #4e47ff;
-  --secondary-color: #252432;
+  --secondary-color: rgba(37, 36, 50, 0.5);
 }
 /* ===== End: Theme variable ===== */
 
 /* ===== Start: Same Styling ===== */
 
 /* ===== Start: Button Style ===== */
+a {
+  text-decoration: none;
+}
 .btn-primary {
   background-color: var(--primary-color);
   color: #fff;
@@ -29,6 +32,13 @@
   font-weight: bold;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2d26ff;
+  transform: scale(0.9);
 }
 /* ===== End: Button Style ===== */
 /* ===== Start: Fonts Style ===== */
@@ -88,3 +98,39 @@ nav .logo {
 }
 /* ===== End: Header Content ===== */
 /* ===== End: Header Section ===== */
+
+/* ===== Start: Main Section ===== */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* ===== Start: Action Section ===== */
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 116px 0;
+}
+
+.action-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+  max-width: 530px;
+}
+
+.action-title {
+  font-size: 42px;
+  font-weight: bold;
+}
+.action-description {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+.action-img {
+  border-radius: 48px;
+}
+/* ===== End: Action Section ===== */
+/* ===== End: Main Section ===== */
