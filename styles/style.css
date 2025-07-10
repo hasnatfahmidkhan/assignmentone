@@ -170,4 +170,66 @@ main .productive-users .users-data .data-subtitle {
 }
 /* ===== End: Productive User Data ===== */
 
+/* ===== Start: Users Feedback Section ===== */
+.user-feedback {
+  margin-bottom: 137px;
+}
+main .user-feedback .feedback-title {
+  font-size: 42px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 50px;
+}
+main .user-feedback .feedback-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+main .user-feedback .feedback-cards .card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid #f2eded;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+main .user-feedback .feedback-cards .card:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+main .user-feedback .feedback-cards .card .card-content .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+main .user-feedback .feedback-cards .card .card-content .card-subtilte {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--secondary-color);
+}
+
+main .user-feedback .feedback-cards .card .user-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .user-feedback .feedback-cards .card .user-details .user-name {
+  color: var(--secondary-color);
+  margin-bottom: 0.3rem;
+  color: #757575;
+}
+main .user-feedback .feedback-cards .card .user-details .review-data {
+  color: var(--secondary-text-color);
+}
+
+main .user-feedback .feedback-cards .card .user-details .user-img {
+  border-radius: 50%;
+}
+/* ===== End: Users Feedback Section ===== */
 /* ===== End: Main Section ===== */
