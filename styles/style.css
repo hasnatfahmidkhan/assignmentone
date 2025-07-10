@@ -17,7 +17,9 @@
   --secondary-text-color: rgba(37, 36, 50, 0.5);
 }
 /* ===== End: Theme variable ===== */
-
+body {
+  background-color: #f5f8ff;
+}
 /* ===== Start: Same Styling ===== */
 
 /* ===== Start: Button Style ===== */
@@ -194,6 +196,7 @@ main .user-feedback .feedback-cards .card {
   gap: 1.5rem;
   border: 1px solid #f2eded;
   border-radius: 14px;
+  border: 1px solid #f2eded;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -231,5 +234,36 @@ main .user-feedback .feedback-cards .card .user-details .review-data {
 main .user-feedback .feedback-cards .card .user-details .user-img {
   border-radius: 50%;
 }
+
+/* ===== Start: Focus Section ===== */
+main .focus {
+  margin: 0 auto;
+  padding: 4.45rem 9.375rem;
+  background-color: #fff;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 7rem;
+}
+
+main .focus .focus-title {
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+
+main .focus .focus-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+}
+
+main .focus .webflow-big-img {
+  max-width: 840px;
+  border-radius: 3rem;
+
+}
+/* ===== End: Focus Section ===== */
 /* ===== End: Users Feedback Section ===== */
 /* ===== End: Main Section ===== */
