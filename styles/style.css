@@ -134,7 +134,8 @@ main {
   color: var(--secondary-text-color);
 }
 .action-img {
-  border-radius: 48px;
+  border-radius: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 /* ===== End: Action Section ===== */
 
@@ -265,6 +266,7 @@ main .focus .focus-btn {
 main .focus .webflow-big-img {
   max-width: 840px;
   border-radius: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 /* ===== End: Focus Section ===== */
 
