@@ -15,6 +15,8 @@
   --primary-color: #4e47ff;
   --secondary-color: #252432;
   --secondary-text-color: rgba(37, 36, 50, 0.5);
+  --btn-hover-bg: #2d26ff;
+  --logo-secondary: #fd6e0a;
 }
 /* ===== End: Theme variable ===== */
 body {
@@ -40,7 +42,7 @@ a {
 }
 
 .btn-primary:hover {
-  background-color: #2d26ff;
+  background-color: var(--btn-hover-bg);
   transform: scale(0.9);
 }
 /* ===== End: Button Style ===== */
@@ -59,6 +61,17 @@ a {
   text-align: center;
 }
 /* ===== End: Text Center ===== */
+/* ===== Start: Logo Style ===== */
+.logo {
+  font-size: 34px;
+  font-weight: 900;
+  color: var(--primary-color);
+  letter-spacing: 1.3px;
+}
+.logo span {
+  color: var(--logo-secondary);
+}
+/* ===== End: Logo Style ===== */
 /* ===== End: Same Styling ===== */
 
 /* ===== Start: Header Section ===== */
@@ -77,12 +90,7 @@ header nav {
   width: 100%;
   margin: 0 auto;
 }
-header nav .logo {
-  font-size: 34px;
-  font-weight: 900;
-  color: var(--primary-color);
-  letter-spacing: 1.3px;
-}
+
 /* ===== End: Navbar ===== */
 
 /* ===== Start: Header Content ===== */
@@ -130,7 +138,6 @@ main .action .action-content .action-title {
 }
 main .action .action-content .action-description {
   font-size: 1.5rem;
-  --secondary-color: #252432;
   color: var(--secondary-text-color);
 }
 main .action .action-img {
@@ -151,7 +158,6 @@ main .productive-users {
 main .productive-users .productive-title {
   font-size: 38px;
   font-weight: bold;
-  --secondary-color: #252432;
   color: var(--secondary-color);
   margin-bottom: 40px;
 }
@@ -323,7 +329,7 @@ main .getIn-touch form textarea:focus {
 
 /* ===== Start: Footer Section ===== */
 footer {
-  padding: 6.25rem;
+  padding: 6.25rem 0 1.5rem 0;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -382,4 +388,8 @@ footer nav ul li a:hover::after {
   width: 100%;
 }
 
+footer .copy-right {
+  font-size: 1.3rem;
+  color: var(--secondary-text-color);
+}
 /* ===== End: Footer Section ===== */
